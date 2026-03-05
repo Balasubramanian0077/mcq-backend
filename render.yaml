@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: mcq-backend
+    runtime: java
+    repo: https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME
+    branch: main
+    buildCommand: ./mvnw clean package -DskipTests
+    startCommand: java -jar target/QuizApplication-0.0.1-SNAPSHOT.jar
+    plan: free
+    autoDeploy: true
