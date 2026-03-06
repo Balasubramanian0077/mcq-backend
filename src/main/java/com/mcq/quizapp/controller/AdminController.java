@@ -44,15 +44,12 @@ public class AdminController {
     }
     
     @PostMapping("/add/questions")
-	public Question add(@RequestBody Question question) {
-		return questionService.addQuestion(question);
-	}
+    public Question add(@RequestBody Question question) {
+        return questionService.addQuestion(question);
+    }
 
     @GetMapping("/results/all")
     public List<UserResult> allResults() {
         return userResultRepository.findAll();
     }
- 
- 
-    
 }
