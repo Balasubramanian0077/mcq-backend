@@ -15,7 +15,7 @@ import com.mcq.quizapp.service.QuestionService;
 import jakarta.validation.Valid;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "*")
 @RequestMapping("/admin")
 public class AdminController {
 
@@ -44,15 +44,12 @@ public class AdminController {
     }
     
     @PostMapping("/add/questions")
-	public Question add(@RequestBody Question question) {
-		return questionService.addQuestion(question);
-	}
+    public Question add(@RequestBody Question question) {
+        return questionService.addQuestion(question);
+    }
 
     @GetMapping("/results/all")
     public List<UserResult> allResults() {
         return userResultRepository.findAll();
     }
- 
- 
-    
 }
