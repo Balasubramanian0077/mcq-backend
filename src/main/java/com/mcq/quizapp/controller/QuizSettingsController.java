@@ -6,7 +6,7 @@ import com.mcq.quizapp.model.QuizSettings;
 import com.mcq.quizapp.service.QuizSettingsService;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+
 @RequestMapping("/quiz")
 public class QuizSettingsController {
 

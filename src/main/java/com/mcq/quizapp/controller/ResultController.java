@@ -9,7 +9,7 @@ import com.mcq.quizapp.model.AnswerRequest;
 import com.mcq.quizapp.service.ResultService;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+
 @RequestMapping("/result")
 public class ResultController {
 

@@ -13,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+
 @RequestMapping("/user")
 public class UserController {
 
