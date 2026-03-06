@@ -15,7 +15,7 @@ import com.mcq.quizapp.service.QuestionService;
 import jakarta.validation.Valid;
 
 @RestController
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "*")
 @RequestMapping("/admin")
 public class AdminController {
 
